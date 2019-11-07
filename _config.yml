@@ -81,4 +81,5 @@ RSS: false
 permalink: /:year/:month/:day/:title.html
 
 # Plugins
-plugins: [jekyll-paginate]
+# plugins: [jekyll-paginate]
+gems: [jekyll-paginate]

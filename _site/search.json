@@ -1,21 +1,27 @@
 [
   
     {
-      "title"    : "MathJax Test",
+      "title"    : "VIM 终端里使用方法",
       "tags"     : "mathjax",
-      "url"      : "/2017/07/30/mathjax-test.html"
+      "url"      : "/2019/11/06/VIM-%E7%BB%88%E7%AB%AF%E9%87%8C%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html"
     } ,
   
     {
-      "title"    : "H2O theme for Jekyll",
-      "tags"     : "jekyll 前端开发 设计",
-      "url"      : "/2017/04/18/new-theme-h2o.html"
+      "title"    : "Ubuntu18.0 安装",
+      "tags"     : "mathjax",
+      "url"      : "/2019/11/06/Ubuntu18.04%E5%AE%89%E8%A3%85.html"
     } ,
   
     {
-      "title"    : "Hello Jekyll",
+      "title"    : "jekyll 和git 搭建博客(极其简单的方法,套模板)",
       "tags"     : "jekyll",
-      "url"      : "/2017/04/18/hello-jekyll.html"
+      "url"      : "/2019/11/05/jekyll%E5%92%8Cgit%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html"
+    } ,
+  
+    {
+      "title"    : "Ubuntu 安装sougo输入法",
+      "tags"     : "jekyll",
+      "url"      : "/2019/11/05/Ubuntu%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95.html"
     } 
   
 ]

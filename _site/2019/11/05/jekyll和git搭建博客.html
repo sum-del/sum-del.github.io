@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MathJax Test - 于昌盛的博客</title>
+    <title>jekyll 和git 搭建博客(极其简单的方法,套模板) - 于昌盛的博客</title>
     <meta name="author"  content="于昌盛">
-    <meta name="description" content="MathJax Test">
-    <meta name="keywords"  content="mathjax">
+    <meta name="description" content="jekyll 和git 搭建博客(极其简单的方法,套模板)">
+    <meta name="keywords"  content="jekyll">
     <!-- Open Graph -->
-    <meta property="og:title" content="MathJax Test - 于昌盛的博客">
+    <meta property="og:title" content="jekyll 和git 搭建博客(极其简单的方法,套模板) - 于昌盛的博客">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sum-del.github.io/2017/07/30/mathjax-test.html">
+    <meta property="og:url" content="https://sum-del.github.io/2019/11/05/jekyll%E5%92%8Cgit%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html">
     <meta property="og:description" content="昵称小鱼儿，后端开发者，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。">
     <meta property="og:site_name" content="于昌盛的博客">
     <link rel="stylesheet" href="//cdn.staticfile.org/normalize/6.0.0/normalize.min.css">
@@ -116,14 +116,14 @@ Author: Ray-Eldath
       <div class="post-tags">
         
           
-            <a href="/tags.html#mathjax" class="post-tag">mathjax</a>
+            <a href="/tags.html#jekyll" class="post-tag">jekyll</a>
           
         
       </div>
-      <h1>MathJax Test</h1>
+      <h1>jekyll 和git 搭建博客(极其简单的方法,套模板)</h1>
       <div class="post-meta">
         <span class="post-meta-item"><i class="iconfont icon-author"></i>于昌盛</span>
-        <time class="post-meta-item" datetime="17-07-30"><i class="iconfont icon-date"></i>30 Jul 2017</time>
+        <time class="post-meta-item" datetime="19-11-05"><i class="iconfont icon-date"></i>05 Nov 2019</time>
       </div>
     </div>
     
@@ -133,24 +133,42 @@ Author: Ray-Eldath
     
 
     <article class="markdown-body">
-      <p>mathjax in markdown :)</p>
+      <ul>
+  <li>
+    <p>(前提需要下载安装好git和jekyll)</p>
+  </li>
+  <li>
+    <p>1.创建githup 账号,并新建仓库<img src="/images/搭建博客/sendpix0.jpg" alt="" /></p>
+  </li>
+  <li>
+    <p>2.在Linux终端里写入clone命令 git clone https://github.com/sum-del/sum-del.github.io(这是我本人的库名)或者通过gitup库里下载,自己的库<img src="/images/搭建博客/搭建博客2.jpg" alt="" /></p>
+  </li>
+  <li>
+    <p>\3. 下载模板[http://jekyllthemes.org/],更改配置文件_config.yml,这里面更改url地址为http://+你的库名,_posts 这里存放要发表的文章，也就是需要被转换成.html的.md文件</p>
+  </li>
+  <li>
+    <p>4.我比较懒,就把修改后的文件复制到自己仓库的文件中,</p>
+  </li>
+  <li>
+    <p>5.终端cd 进入这个克隆的文件当中,打开jekyll server ,在本地浏览器输入http://localhost:4000：可以预览效果</p>
+  </li>
+  <li>
+    <p>6.效果满意进入终端上传文件</p>
+  </li>
+  <li>
+    <p>7.4步上传</p>
 
-<p><strong>这是一个不<code class="highlighter-rouge">align</code>的公式</strong>：</p>
-
-<script type="math/tex; mode=display">\forall \alpha \in A, \quad a \cdot b = 0</script>
-
-<p><strong>这是一个<code class="highlighter-rouge">align</code>的公式</strong>：</p>
-
-<script type="math/tex; mode=display">% <![CDATA[
-\text{for OTP : $\qquad$ if }\quad E(k,\:m)=c\\
-\begin{align}
-k\oplus m &= c \\
-k &= m\oplus c
-\end{align}
-\\
-\#\{\;k \in \mathscr K : \quad E(k,\:m)=c \;\}=1 \quad \forall m,\:c %]]></script>
-
-<p><strong>注意：</strong>公式块要想有较好的显示效果，必须在公式块标记符<code class="highlighter-rouge">$$</code><strong>前后</strong>留有空行，否则公式将不能正常居中。行内公式无此问题。</p>
+    <ul>
+      <li>\1. git add .</li>
+      <li>\2. git commit</li>
+      <li>3.git pull</li>
+      <li>4.git push</li>
+    </ul>
+  </li>
+  <li>
+    <p>完成博客,点击网站查看即可</p>
+  </li>
+</ul>
 
     </article>
 
@@ -185,10 +203,10 @@ k &= m\oplus c
     <section class="post-footer-item read-next">
       
       <div class="read-next-item">
-        <a href="/2019/11/05/Ubuntu%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95.html" class="read-next-link"></a>
+        <a href="/2019/11/06/Ubuntu18.04%E5%AE%89%E8%A3%85.html" class="read-next-link"></a>
         <section>
-          <span>Ubuntu 安装sougo输入法</span>
-          <p>  首先下载搜狗输入法：https://pinyin.sogou.com/linux/ 我选择的是64位。 搜狗输...</p>
+          <span>Ubuntu18.0 安装</span>
+          <p>  1.备有Ubuntu 18.04 的Ubuntu安装U盘,ps:没有的话下载镜像文件进行制作[https://...</p>
         </section>
         
      </div>
@@ -196,14 +214,11 @@ k &= m\oplus c
 
       
       <div class="read-next-item">
-        <a href="/2017/04/18/new-theme-h2o.html" class="read-next-link"></a>
+        <a href="/2019/11/05/Ubuntu%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95.html" class="read-next-link"></a>
           <section>
-            <span>H2O theme for Jekyll</span>
-            <p>正如我在微博上所说的，使用Jekyll半年以来一直没有令我满意的主题模板，所以开始计划自己写一套好看又好用的主题模...</p>
+            <span>Ubuntu 安装sougo输入法</span>
+            <p>  首先下载搜狗输入法：https://pinyin.sogou.com/linux/ 我选择的是64位。 搜狗输...</p>
           </section>
-          
-          <div class="filter"></div>
-          <img src="http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-postcover.jpg" alt="">
           
       </div>
       

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MathJax Test - 于昌盛的博客</title>
+    <title>Ubuntu 安装sougo输入法 - 于昌盛的博客</title>
     <meta name="author"  content="于昌盛">
-    <meta name="description" content="MathJax Test">
-    <meta name="keywords"  content="mathjax">
+    <meta name="description" content="Ubuntu 安装sougo输入法">
+    <meta name="keywords"  content="jekyll">
     <!-- Open Graph -->
-    <meta property="og:title" content="MathJax Test - 于昌盛的博客">
+    <meta property="og:title" content="Ubuntu 安装sougo输入法 - 于昌盛的博客">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sum-del.github.io/2017/07/30/mathjax-test.html">
+    <meta property="og:url" content="https://sum-del.github.io/2019/11/05/Ubuntu%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95.html">
     <meta property="og:description" content="昵称小鱼儿，后端开发者，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。">
     <meta property="og:site_name" content="于昌盛的博客">
     <link rel="stylesheet" href="//cdn.staticfile.org/normalize/6.0.0/normalize.min.css">
@@ -116,14 +116,14 @@ Author: Ray-Eldath
       <div class="post-tags">
         
           
-            <a href="/tags.html#mathjax" class="post-tag">mathjax</a>
+            <a href="/tags.html#jekyll" class="post-tag">jekyll</a>
           
         
       </div>
-      <h1>MathJax Test</h1>
+      <h1>Ubuntu 安装sougo输入法</h1>
       <div class="post-meta">
         <span class="post-meta-item"><i class="iconfont icon-author"></i>于昌盛</span>
-        <time class="post-meta-item" datetime="17-07-30"><i class="iconfont icon-date"></i>30 Jul 2017</time>
+        <time class="post-meta-item" datetime="19-11-05"><i class="iconfont icon-date"></i>05 Nov 2019</time>
       </div>
     </div>
     
@@ -133,24 +133,25 @@ Author: Ray-Eldath
     
 
     <article class="markdown-body">
-      <p>mathjax in markdown :)</p>
+      <ul>
+  <li>首先下载搜狗输入法：https://pinyin.sogou.com/linux/ 我选择的是64位。 搜狗输入法在ubuntu下需要支持 fcitx框架</li>
+  <li>
+    <p>进入Ubuntu软件下，安装fcitx扩展<img src="/images/搜狗输入法/sendpix2.jpg" alt="" /></p>
+  </li>
+  <li>
+    <p>点击设置进入语言支持选择fcitx<img src="/images/搜狗输入法/sendpix3.jpg" alt="" /></p>
+  </li>
+  <li>终端安装搜狗输入法</li>
+</ul>
 
-<p><strong>这是一个不<code class="highlighter-rouge">align</code>的公式</strong>：</p>
+<p>1.<code class="highlighter-rouge">sudo apt install libqtwebkit4sudo apt install fcitx-libssudo apt install libopencc2</code></p>
 
-<script type="math/tex; mode=display">\forall \alpha \in A, \quad a \cdot b = 0</script>
+<p>2.<code class="highlighter-rouge">sudo dpkg -i sogoupinyin_2.2.0.0108_amd64.deb</code></p>
 
-<p><strong>这是一个<code class="highlighter-rouge">align</code>的公式</strong>：</p>
-
-<script type="math/tex; mode=display">% <![CDATA[
-\text{for OTP : $\qquad$ if }\quad E(k,\:m)=c\\
-\begin{align}
-k\oplus m &= c \\
-k &= m\oplus c
-\end{align}
-\\
-\#\{\;k \in \mathscr K : \quad E(k,\:m)=c \;\}=1 \quad \forall m,\:c %]]></script>
-
-<p><strong>注意：</strong>公式块要想有较好的显示效果，必须在公式块标记符<code class="highlighter-rouge">$$</code><strong>前后</strong>留有空行，否则公式将不能正常居中。行内公式无此问题。</p>
+<ul>
+  <li>或者直接点击安装包进行安装,不过页面安装可能会出现文件依赖问题,还不会报错,需要注意</li>
+  <li>完成后进行重启系统,桌面右上角出现小键盘,代表安装成功,点击切换即可</li>
+</ul>
 
     </article>
 
@@ -185,27 +186,15 @@ k &= m\oplus c
     <section class="post-footer-item read-next">
       
       <div class="read-next-item">
-        <a href="/2019/11/05/Ubuntu%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95.html" class="read-next-link"></a>
+        <a href="/2019/11/05/jekyll%E5%92%8Cgit%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html" class="read-next-link"></a>
         <section>
-          <span>Ubuntu 安装sougo输入法</span>
-          <p>  首先下载搜狗输入法：https://pinyin.sogou.com/linux/ 我选择的是64位。 搜狗输...</p>
+          <span>jekyll 和git 搭建博客(极其简单的方法,套模板)</span>
+          <p>  (前提需要下载安装好git和jekyll)</p>
         </section>
         
      </div>
       
 
-      
-      <div class="read-next-item">
-        <a href="/2017/04/18/new-theme-h2o.html" class="read-next-link"></a>
-          <section>
-            <span>H2O theme for Jekyll</span>
-            <p>正如我在微博上所说的，使用Jekyll半年以来一直没有令我满意的主题模板，所以开始计划自己写一套好看又好用的主题模...</p>
-          </section>
-          
-          <div class="filter"></div>
-          <img src="http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-postcover.jpg" alt="">
-          
-      </div>
       
     </section>
     

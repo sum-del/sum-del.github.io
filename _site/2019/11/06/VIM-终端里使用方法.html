@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MathJax Test - 于昌盛的博客</title>
+    <title>VIM 终端里使用方法 - 于昌盛的博客</title>
     <meta name="author"  content="于昌盛">
-    <meta name="description" content="MathJax Test">
+    <meta name="description" content="VIM 终端里使用方法">
     <meta name="keywords"  content="mathjax">
     <!-- Open Graph -->
-    <meta property="og:title" content="MathJax Test - 于昌盛的博客">
+    <meta property="og:title" content="VIM 终端里使用方法 - 于昌盛的博客">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sum-del.github.io/2017/07/30/mathjax-test.html">
+    <meta property="og:url" content="https://sum-del.github.io/2019/11/06/VIM-%E7%BB%88%E7%AB%AF%E9%87%8C%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html">
     <meta property="og:description" content="昵称小鱼儿，后端开发者，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。">
     <meta property="og:site_name" content="于昌盛的博客">
     <link rel="stylesheet" href="//cdn.staticfile.org/normalize/6.0.0/normalize.min.css">
@@ -120,10 +120,10 @@ Author: Ray-Eldath
           
         
       </div>
-      <h1>MathJax Test</h1>
+      <h1>VIM 终端里使用方法</h1>
       <div class="post-meta">
         <span class="post-meta-item"><i class="iconfont icon-author"></i>于昌盛</span>
-        <time class="post-meta-item" datetime="17-07-30"><i class="iconfont icon-date"></i>30 Jul 2017</time>
+        <time class="post-meta-item" datetime="19-11-06"><i class="iconfont icon-date"></i>06 Nov 2019</time>
       </div>
     </div>
     
@@ -133,24 +133,65 @@ Author: Ray-Eldath
     
 
     <article class="markdown-body">
-      <p>mathjax in markdown :)</p>
-
-<p><strong>这是一个不<code class="highlighter-rouge">align</code>的公式</strong>：</p>
-
-<script type="math/tex; mode=display">\forall \alpha \in A, \quad a \cdot b = 0</script>
-
-<p><strong>这是一个<code class="highlighter-rouge">align</code>的公式</strong>：</p>
-
-<script type="math/tex; mode=display">% <![CDATA[
-\text{for OTP : $\qquad$ if }\quad E(k,\:m)=c\\
-\begin{align}
-k\oplus m &= c \\
-k &= m\oplus c
-\end{align}
-\\
-\#\{\;k \in \mathscr K : \quad E(k,\:m)=c \;\}=1 \quad \forall m,\:c %]]></script>
-
-<p><strong>注意：</strong>公式块要想有较好的显示效果，必须在公式块标记符<code class="highlighter-rouge">$$</code><strong>前后</strong>留有空行，否则公式将不能正常居中。行内公式无此问题。</p>
+      <ul>
+  <li><code class="highlighter-rouge">命令模式</code>
+    <ul>
+      <li>a/i/o进入增加模式</li>
+      <li>光标指向的位置可以进行操作</li>
+      <li>yy可以整行复制,nyy多行复制</li>
+      <li>粘贴p</li>
+      <li>(剪切)删除x ,删除多个字节 nx</li>
+      <li>(剪切)删除整行dd,删除多行ndd</li>
+      <li>撤销 u</li>
+      <li>反撤销 ctrl+r</li>
+    </ul>
+  </li>
+  <li>增加模式
+    <ul>
+      <li>点击ESC可以切换至命令模式</li>
+      <li>增加模式,可以写入文本内容</li>
+    </ul>
+  </li>
+  <li>末行模式(启用命令模式后方能启用末行模式)
+    <ul>
+      <li>: wq 保存退出</li>
+      <li>:w! 强制保存</li>
+      <li>:q! 强制退出</li>
+      <li>:wq!强制保存退出 (管理员使用)</li>
+      <li>set nu 设置行号</li>
+      <li>取消 行号set nonu</li>
+      <li>全文查找 /内容,n 进行切换</li>
+      <li>全文替换 :%s/什么/替换内容/g</li>
+      <li>范围替换 :开头行号,结束行号s/什么/替换内容/g</li>
+    </ul>
+  </li>
+  <li>建立配置文件
+    <ul>
+      <li>vim ~/.vimrc
+        <ul>
+          <li>内容 set nu,可以设置为所有文件都附带有行号</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>光标移动
+    <ul>
+      <li>gg 光标移动到第一行 ,G光标移动到最后一行</li>
+      <li>用箭头代表上下左右</li>
+    </ul>
+  </li>
+  <li>取消注释：
+    <ul>
+      <li>Ctrl + v 进入块选择模式，选中你要删除的行首的注释符号，注意 // 要选中两个，选好之后按 d 即可删除注释，ESC 保存退出。</li>
+    </ul>
+  </li>
+  <li>批量注释：
+    <ul>
+      <li>Ctrl + v 进入块选择模式，然后移动光标选中你要注释的行，再按大写的 I 进入行首插入模式输入注释符号如 // 或 #，输入完毕之后，按两下 ESC，Vim 会自动将你选中的所有行首都加上注释，保存退出完成注释</li>
+    </ul>
+  </li>
+  <li>进入文件 vim + filename</li>
+</ul>
 
     </article>
 
@@ -184,26 +225,14 @@ k &= m\oplus c
     </section>
     <section class="post-footer-item read-next">
       
-      <div class="read-next-item">
-        <a href="/2019/11/05/Ubuntu%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95.html" class="read-next-link"></a>
-        <section>
-          <span>Ubuntu 安装sougo输入法</span>
-          <p>  首先下载搜狗输入法：https://pinyin.sogou.com/linux/ 我选择的是64位。 搜狗输...</p>
-        </section>
-        
-     </div>
-      
 
       
       <div class="read-next-item">
-        <a href="/2017/04/18/new-theme-h2o.html" class="read-next-link"></a>
+        <a href="/2019/11/06/Ubuntu18.04%E5%AE%89%E8%A3%85.html" class="read-next-link"></a>
           <section>
-            <span>H2O theme for Jekyll</span>
-            <p>正如我在微博上所说的，使用Jekyll半年以来一直没有令我满意的主题模板，所以开始计划自己写一套好看又好用的主题模...</p>
+            <span>Ubuntu18.0 安装</span>
+            <p>  1.备有Ubuntu 18.04 的Ubuntu安装U盘,ps:没有的话下载镜像文件进行制作[https://...</p>
           </section>
-          
-          <div class="filter"></div>
-          <img src="http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-postcover.jpg" alt="">
           
       </div>
       

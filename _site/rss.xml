@@ -5,34 +5,75 @@
     <description>昵称小鱼儿，后端开发者，热爱技术&amp;设计。很高兴能在这里与你分享我对技术和生活的思考。</description>
     <link>https://sum-del.github.io//</link>
     <atom:link href="https://sum-del.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 06 Nov 2019 15:55:14 +0800</pubDate>
-    <lastBuildDate>Wed, 06 Nov 2019 15:55:14 +0800</lastBuildDate>
+    <pubDate>Thu, 07 Nov 2019 11:44:01 +0800</pubDate>
+    <lastBuildDate>Thu, 07 Nov 2019 11:44:01 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>MathJax Test</title>
-        <description>&lt;p&gt;mathjax in markdown :)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;这是一个不&lt;code class=&quot;highlighter-rouge&quot;&gt;align&lt;/code&gt;的公式&lt;/strong&gt;：&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;\forall \alpha \in A, \quad a \cdot b = 0&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;这是一个&lt;code class=&quot;highlighter-rouge&quot;&gt;align&lt;/code&gt;的公式&lt;/strong&gt;：&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\text{for OTP : $\qquad$ if }\quad E(k,\:m)=c\\
-\begin{align}
-k\oplus m &amp;= c \\
-k &amp;= m\oplus c
-\end{align}
-\\
-\#\{\;k \in \mathscr K : \quad E(k,\:m)=c \;\}=1 \quad \forall m,\:c %]]&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;公式块要想有较好的显示效果，必须在公式块标记符&lt;code class=&quot;highlighter-rouge&quot;&gt;$$&lt;/code&gt;&lt;strong&gt;前后&lt;/strong&gt;留有空行，否则公式将不能正常居中。行内公式无此问题。&lt;/p&gt;
+        <title>VIM 终端里使用方法</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;命令模式&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;a/i/o进入增加模式&lt;/li&gt;
+      &lt;li&gt;光标指向的位置可以进行操作&lt;/li&gt;
+      &lt;li&gt;yy可以整行复制,nyy多行复制&lt;/li&gt;
+      &lt;li&gt;粘贴p&lt;/li&gt;
+      &lt;li&gt;(剪切)删除x ,删除多个字节 nx&lt;/li&gt;
+      &lt;li&gt;(剪切)删除整行dd,删除多行ndd&lt;/li&gt;
+      &lt;li&gt;撤销 u&lt;/li&gt;
+      &lt;li&gt;反撤销 ctrl+r&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;增加模式
+    &lt;ul&gt;
+      &lt;li&gt;点击ESC可以切换至命令模式&lt;/li&gt;
+      &lt;li&gt;增加模式,可以写入文本内容&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;末行模式(启用命令模式后方能启用末行模式)
+    &lt;ul&gt;
+      &lt;li&gt;: wq 保存退出&lt;/li&gt;
+      &lt;li&gt;:w! 强制保存&lt;/li&gt;
+      &lt;li&gt;:q! 强制退出&lt;/li&gt;
+      &lt;li&gt;:wq!强制保存退出 (管理员使用)&lt;/li&gt;
+      &lt;li&gt;set nu 设置行号&lt;/li&gt;
+      &lt;li&gt;取消 行号set nonu&lt;/li&gt;
+      &lt;li&gt;全文查找 /内容,n 进行切换&lt;/li&gt;
+      &lt;li&gt;全文替换 :%s/什么/替换内容/g&lt;/li&gt;
+      &lt;li&gt;范围替换 :开头行号,结束行号s/什么/替换内容/g&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;建立配置文件
+    &lt;ul&gt;
+      &lt;li&gt;vim ~/.vimrc
+        &lt;ul&gt;
+          &lt;li&gt;内容 set nu,可以设置为所有文件都附带有行号&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;光标移动
+    &lt;ul&gt;
+      &lt;li&gt;gg 光标移动到第一行 ,G光标移动到最后一行&lt;/li&gt;
+      &lt;li&gt;用箭头代表上下左右&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;取消注释：
+    &lt;ul&gt;
+      &lt;li&gt;Ctrl + v 进入块选择模式，选中你要删除的行首的注释符号，注意 // 要选中两个，选好之后按 d 即可删除注释，ESC 保存退出。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;批量注释：
+    &lt;ul&gt;
+      &lt;li&gt;Ctrl + v 进入块选择模式，然后移动光标选中你要注释的行，再按大写的 I 进入行首插入模式输入注释符号如 // 或 #，输入完毕之后，按两下 ESC，Vim 会自动将你选中的所有行首都加上注释，保存退出完成注释&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;进入文件 vim + filename&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Sun, 30 Jul 2017 00:00:00 +0800</pubDate>
-        <link>https://sum-del.github.io/2017/07/30/mathjax-test.html</link>
-        <guid isPermaLink="true">https://sum-del.github.io/2017/07/30/mathjax-test.html</guid>
+        <pubDate>Wed, 06 Nov 2019 00:00:00 +0800</pubDate>
+        <link>https://sum-del.github.io/2019/11/06/VIM-%E7%BB%88%E7%AB%AF%E9%87%8C%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html</link>
+        <guid isPermaLink="true">https://sum-del.github.io/2019/11/06/VIM-%E7%BB%88%E7%AB%AF%E9%87%8C%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html</guid>
         
         <category>mathjax</category>
         
@@ -42,168 +83,115 @@ k &amp;= m\oplus c
       </item>
     
       <item>
-        <title>H2O theme for Jekyll</title>
-        <description>&lt;p&gt;正如我在&lt;a href=&quot;http://weibo.com/1374146504/profile?topnav=1&amp;amp;wvr=6&quot;&gt;微博&lt;/a&gt;上所说的，使用&lt;a href=&quot;http://jekyll.com.cn/&quot;&gt;Jekyll&lt;/a&gt;半年以来一直没有令我满意的主题模板，所以开始计划自己写一套好看又好用的主题模板。设计之初就明确了极简主义，风格采用扁平化了，通过卡片式设计来进行区块分明的布局，参考了Medium的ui样式和知乎专栏的视觉风格。&lt;/p&gt;
-
-&lt;h2 id=&quot;h2o&quot;&gt;H2O&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/kaeyleo/jekyll-theme-H2O&quot;&gt;源码及使用文档 →&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-realhome.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;新主题名叫”H2O”，基于Jekyll 3.0.x（使用&lt;code class=&quot;highlighter-rouge&quot;&gt;gem update jekyll&lt;/code&gt;升级Jekyll），Markdown的代码高亮不再支持pygments转而使用rouge，咱已经默认配置了 &lt;code class=&quot;highlighter-rouge&quot;&gt;highlighter: rouge&lt;/code&gt; 。用到的技术栈也很简单：引入jQuery类库，使用Sass编写样式，使用Gulp来编译Sass、合并压缩css、js，开源在&lt;a href=&quot;https://github.com/kaeyleo/jekyll-theme-H2O&quot;&gt;Github&lt;/a&gt;上，稍作配置即可用于你的Jekyll博客上。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-sketchdesign.png&quot; alt=&quot;Design with Sketch&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;使用Sketch完成H2O主题的原型设计&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://on2171g4d.bkt.clouddn.com/jekyll-theme-vs.jpg&quot; alt=&quot;My Jekyll themes&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;比之前漂亮不少吧，下面聊聊H2O的新特性。&lt;/p&gt;
-
-&lt;h2 id=&quot;新特性&quot;&gt;新特性&lt;/h2&gt;
-
-&lt;h3 id=&quot;主题配色&quot;&gt;主题配色&lt;/h3&gt;
-
-&lt;p&gt;支持两种主题配色——蓝色和粉色。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.com/kaeyleo/jekyll-theme-H2O/blob/master/screenshot/jekyll-theme-h2o-themecolor.jpg?raw=true&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;侧边栏&quot;&gt;侧边栏&lt;/h3&gt;
-
-&lt;p&gt;相比自己上一个版本的博客主题，首页增加了侧边栏，方便展示博主的个人信息和文章标签。&lt;/p&gt;
-
-&lt;h3 id=&quot;社交图标&quot;&gt;社交图标&lt;/h3&gt;
-
-&lt;p&gt;使用阿里的图标管理平台&lt;a href=&quot;http://iconfont.cn/&quot;&gt;Iconfont&lt;/a&gt;整理了一套&lt;strike&gt;墙内外&lt;/strike&gt;常用的社交图标，包括微博、知乎、掘金、简书、Github等十多个网站，鼠标悬停会显示该站的主题色。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-snstext.jpg&quot; alt=&quot;social iconfont&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;前后文导航&quot;&gt;前后文导航&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-nextpostnav.png&quot; alt=&quot;Next post navigator&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;自定义文章封面&quot;&gt;自定义文章封面&lt;/h3&gt;
-
-&lt;p&gt;在Markdown的&lt;a href=&quot;http://jekyll.com.cn/docs/frontmatter/&quot;&gt;文章头信息&lt;/a&gt;里添加cover参数来配置文章的封面图片，如果没有配置封面，则默认【主题色+底纹】的组合作为文章封面。值得一提的是，H2O有两种（粉、蓝）主题色和六种底纹（电路板、食物、云海、钻石等等）供你选择。&lt;/p&gt;
-
-&lt;h3 id=&quot;头图个性化底纹&quot;&gt;头图个性化底纹&lt;/h3&gt;
-
-&lt;p&gt;在没有图片的情况下单纯显示颜色会不会太无趣了点？于是想到了加入底纹元素，底纹素材是SVG格式的（保存在css样式里），加载比图片快很多。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-headerpatterns.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;代码高亮&quot;&gt;代码高亮&lt;/h3&gt;
-
-&lt;p&gt;模板引入了&lt;a href=&quot;http://prismjs.com&quot;&gt;Prism.js&lt;/a&gt;，一款轻量、可扩展的代码语法高亮库。&lt;/p&gt;
-
-&lt;p&gt;很多知名网站如&lt;a href=&quot;https://developer.mozilla.org/&quot;&gt;MDN&lt;/a&gt;、&lt;a href=&quot;https://css-tricks.com/&quot;&gt;css-tricks&lt;/a&gt;也在用它，JavaScript 之父 &lt;a href=&quot;https://brendaneich.com/&quot;&gt;Brendan Eich&lt;/a&gt; 也在个人博客上使用。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-highlight.png&quot; alt=&quot;代码高亮&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;遵循 &lt;a href=&quot;https://www.w3.org/TR/html5/grouping-content.html#the-pre-element&quot;&gt;HTML5&lt;/a&gt; 标准，Prism 使用语义化的 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; 元素和 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt; 元素来标记代码区块：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre&amp;gt;&amp;lt;code class=&quot;language-css&quot;&amp;gt;p { color: red }&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;在Markdown中你可以这样写：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ```css
-	p { color: red }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;```&lt;/p&gt;
-
-&lt;p&gt;支持语言：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;HTML&lt;/li&gt;
-  &lt;li&gt;CSS&lt;/li&gt;
-  &lt;li&gt;Sass&lt;/li&gt;
-  &lt;li&gt;JavaScript&lt;/li&gt;
-  &lt;li&gt;CoffeeScript&lt;/li&gt;
-  &lt;li&gt;Java&lt;/li&gt;
-  &lt;li&gt;C-like&lt;/li&gt;
-  &lt;li&gt;Swift&lt;/li&gt;
-  &lt;li&gt;PHP&lt;/li&gt;
-  &lt;li&gt;Go&lt;/li&gt;
-  &lt;li&gt;Python&lt;/li&gt;
+        <title>Ubuntu18.0 安装</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;1.备有Ubuntu 18.04 的Ubuntu安装U盘,ps:没有的话下载镜像文件进行制作[https://jingyan.baidu.com/article/5225f26b0bb45fe6fa0908bc.html]&lt;/li&gt;
+  &lt;li&gt;第一步,开启电脑,一直按住F12 ,会进入选择界面,选择U盘安装Ubuntu&lt;/li&gt;
+  &lt;li&gt;第二部选择语言,中文在最下方&lt;img src=&quot;/images/uubuntu18.04系统安装1.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;选择你的键盘布局：&lt;img src=&quot;/images/uubuntu18.04系统安装2.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;建议:「正常安装」将安装所有应用程序，包括网络浏览器、办公套件、游戏和媒体播放器。 如果您想要设置完整的桌面，请选择「正常安装」ps:正常安装需要联网,否则会不完整&lt;img src=&quot;/images/ubuntu18.04系统安装3.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;接下来，选择安装类型。 安装程序将提供以下四个选项：&lt;img src=&quot;/images/ubuntu18.04系统安装4.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;选择您的国家/地区：&lt;img src=&quot;/images/ubuntu18.04系统安装5.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;输入您的姓名、计算机名、用户名和密码：&lt;img src=&quot;/images/ubuntu18.04系统安装6.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;现在，Ubuntu 18.04 LTS 正式安装就开始了,时间有点久,可以喝杯茶压压惊&lt;img src=&quot;/images/ubuntu18.04系统安装7.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;安装完成后,点击重启&lt;img src=&quot;/images/ubuntu18.04系统安装10.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;输入你之前设置的密码就可以进入了&lt;img src=&quot;/images/ubuntu18.04系统安装8.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;下面便是Ubuntu的原生界面,后期还有许多软件安装,在我其余的文章里面,谢谢观看&lt;img src=&quot;/images/ubuntu18.04系统安装9.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;第三方评论&quot;&gt;第三方评论&lt;/h3&gt;
-
-&lt;p&gt;由于多说关闭，又对国内其他第三方评论插件无感，所以将&lt;a href=&quot;https://disqus.com/&quot;&gt;Disqus&lt;/a&gt;列为首选（目前模板也只提供了这个），请自备梯子。&lt;/p&gt;
-
-&lt;h3 id=&quot;移动端优化&quot;&gt;移动端优化&lt;/h3&gt;
-
-&lt;p&gt;响应式设计，对手机和平板等移动设备做了优化。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://on2171g4d.bkt.clouddn.com/jekyll-theme-h2o-realm.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;关于阅读体验&quot;&gt;关于阅读体验&lt;/h3&gt;
-
-&lt;p&gt;我认为在内容质量相同的情况下，出色的沉浸式阅读体验是博客的核心。&lt;/p&gt;
-
-&lt;p&gt;H2O在这方面还有很多需要完善的地方，比如：&lt;strike&gt;代码高亮&lt;/strike&gt;、夜间模式、查看大图…&lt;/p&gt;
-
-&lt;h3 id=&quot;其他特性&quot;&gt;其他特性：&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;网页标题SEO优化&lt;/li&gt;
-  &lt;li&gt;标签索引，点击标签跳转到标签目录，即可查看对应的全部文章&lt;/li&gt;
-  &lt;li&gt;漂亮&lt;/li&gt;
-  &lt;li&gt;好看&lt;/li&gt;
-  &lt;li&gt;美&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;最后&quot;&gt;最后&lt;/h2&gt;
-
-&lt;p&gt;本想趁这次机会将整站https化的，但折腾了半天发现弹性web托管并不支持，所以暂时搁置https的想法。另外，博客统计工具一直使用的是&lt;a href=&quot;https://tongji.baidu.com&quot;&gt;百度统计&lt;/a&gt;，这次新增了Google Analytics。&lt;/p&gt;
-
-&lt;p&gt;这次从0到1，独自设计、开发再到发布大约用了一周时间，也算完成一个小小的开源项目了，后续也将持续完善和更新，欢迎&lt;a href=&quot;https://github.com/kaeyleo/jekyll-theme-H2O&quot;&gt;Star&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;本文参考: 系统极客&lt;/p&gt;
 </description>
-        <pubDate>Tue, 18 Apr 2017 00:00:00 +0800</pubDate>
-        <link>https://sum-del.github.io/2017/04/18/new-theme-h2o.html</link>
-        <guid isPermaLink="true">https://sum-del.github.io/2017/04/18/new-theme-h2o.html</guid>
+        <pubDate>Wed, 06 Nov 2019 00:00:00 +0800</pubDate>
+        <link>https://sum-del.github.io/2019/11/06/Ubuntu18.04%E5%AE%89%E8%A3%85.html</link>
+        <guid isPermaLink="true">https://sum-del.github.io/2019/11/06/Ubuntu18.04%E5%AE%89%E8%A3%85.html</guid>
         
-        <category>jekyll</category>
-        
-        <category>前端开发</category>
-        
-        <category>设计</category>
+        <category>mathjax</category>
         
         
-        <category>技术</category>
+        <category>test</category>
         
       </item>
     
       <item>
-        <title>Hello Jekyll</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;Transform your plain text into static websites and blogs.&lt;/p&gt;
-&lt;/blockquote&gt;
+        <title>jekyll 和git 搭建博客(极其简单的方法,套模板)</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;(前提需要下载安装好git和jekyll)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;1.创建githup 账号,并新建仓库&lt;img src=&quot;/images/搭建博客/sendpix0.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;2.在Linux终端里写入clone命令 git clone https://github.com/sum-del/sum-del.github.io(这是我本人的库名)或者通过gitup库里下载,自己的库&lt;img src=&quot;/images/搭建博客/搭建博客2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;\3. 下载模板[http://jekyllthemes.org/],更改配置文件_config.yml,这里面更改url地址为http://+你的库名,_posts 这里存放要发表的文章，也就是需要被转换成.html的.md文件&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;4.我比较懒,就把修改后的文件复制到自己仓库的文件中,&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;5.终端cd 进入这个克隆的文件当中,打开jekyll server ,在本地浏览器输入http://localhost:4000：可以预览效果&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;6.效果满意进入终端上传文件&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;7.4步上传&lt;/p&gt;
 
-&lt;h3 id=&quot;welcome&quot;&gt;Welcome&lt;/h3&gt;
-
-&lt;p&gt;This site aims to be a comprehensive guide to Jekyll. We’ll cover topics such as getting your site up and running, creating and managing your content, customizing the way your site works and looks, deploying to various environments, and give you some advice on participating in the future development of Jekyll itself.&lt;/p&gt;
-
-&lt;h3 id=&quot;so-what-is-jekyll-exactlypermalink&quot;&gt;So what is Jekyll, exactly?Permalink&lt;/h3&gt;
-
-&lt;p&gt;Jekyll is a simple, blog-aware, static site generator. It takes a template directory containing raw text files in various formats, runs it through a converter (like &lt;a href=&quot;https://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;) and our &lt;a href=&quot;https://github.com/Shopify/liquid/wiki&quot;&gt;Liquid&lt;/a&gt; renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. Jekyll also happens to be the engine behind GitHub Pages, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers for free.&lt;/p&gt;
-
-&lt;h3 id=&quot;helpful-hintspermalink&quot;&gt;Helpful HintsPermalink&lt;/h3&gt;
-
-&lt;p&gt;Throughout this guide there are a number of small-but-handy pieces of information that can make using Jekyll easier, more interesting, and less hazardous. Here’s what to look out for.&lt;/p&gt;
-
-&lt;h3 id=&quot;video-test&quot;&gt;Video Test&lt;/h3&gt;
-
-&lt;iframe type=&quot;text/html&quot; width=&quot;100%&quot; height=&quot;385&quot; src=&quot;http://www.youtube.com/embed/gfmjMWjn-Xg&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+    &lt;ul&gt;
+      &lt;li&gt;\1. git add .&lt;/li&gt;
+      &lt;li&gt;\2. git commit&lt;/li&gt;
+      &lt;li&gt;3.git pull&lt;/li&gt;
+      &lt;li&gt;4.git push&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;完成博客,点击网站查看即可&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Tue, 18 Apr 2017 00:00:00 +0800</pubDate>
-        <link>https://sum-del.github.io/2017/04/18/hello-jekyll.html</link>
-        <guid isPermaLink="true">https://sum-del.github.io/2017/04/18/hello-jekyll.html</guid>
+        <pubDate>Tue, 05 Nov 2019 00:00:00 +0800</pubDate>
+        <link>https://sum-del.github.io/2019/11/05/jekyll%E5%92%8Cgit%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html</link>
+        <guid isPermaLink="true">https://sum-del.github.io/2019/11/05/jekyll%E5%92%8Cgit%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2.html</guid>
         
         <category>jekyll</category>
         
+        
+        <category>test</category>
+        
+      </item>
+    
+      <item>
+        <title>Ubuntu 安装sougo输入法</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;首先下载搜狗输入法：https://pinyin.sogou.com/linux/ 我选择的是64位。 搜狗输入法在ubuntu下需要支持 fcitx框架&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;进入Ubuntu软件下，安装fcitx扩展&lt;img src=&quot;/images/搜狗输入法/sendpix2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;点击设置进入语言支持选择fcitx&lt;img src=&quot;/images/搜狗输入法/sendpix3.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;终端安装搜狗输入法&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;1.&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install libqtwebkit4sudo apt install fcitx-libssudo apt install libopencc2&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;2.&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo dpkg -i sogoupinyin_2.2.0.0108_amd64.deb&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;或者直接点击安装包进行安装,不过页面安装可能会出现文件依赖问题,还不会报错,需要注意&lt;/li&gt;
+  &lt;li&gt;完成后进行重启系统,桌面右上角出现小键盘,代表安装成功,点击切换即可&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 05 Nov 2019 00:00:00 +0800</pubDate>
+        <link>https://sum-del.github.io/2019/11/05/Ubuntu%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95.html</link>
+        <guid isPermaLink="true">https://sum-del.github.io/2019/11/05/Ubuntu%E5%AE%89%E8%A3%85%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95.html</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>test</category>
         
       </item>
     
